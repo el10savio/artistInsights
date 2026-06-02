@@ -10,7 +10,7 @@ The repository is built mainly by importing the Last.fm dataset and then adding 
 
 ## Prerequisites
 
-Get the dataset from http://ocelma.net/MusicRecommendationDataset/lastfm-1K.html and add it to the dataset folder.
+Get the dataset from http://ocelma.net/MusicRecommendationDataset/lastfm-1K.html and add to the root as `dataset` folder and unzip.
 
 ## Getting Started
 
@@ -18,6 +18,12 @@ Provision ClickHouse and the Go Server using the makefile commands.
 
 ```
 make provision
+```
+
+and to load the data into Clickhouse 
+
+```
+make load-full
 ```
 
 Finally, start the frontend server using. 
