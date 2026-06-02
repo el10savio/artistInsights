@@ -29,6 +29,7 @@ make load-full
 Finally, start the frontend server using. 
 
 ```
+cd frontend
 npm run dev
 ```
 
