@@ -1,0 +1,26 @@
+# Dataset — download separately; see README
+dataset/
+
+# Go build output
+server
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Env overrides
+.env
+.env.local
+docker-compose.override.yml
+
+# Test artifacts
+coverage.out
+*.test
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo

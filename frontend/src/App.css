@@ -1,0 +1,265 @@
+.app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.app-header {
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  margin: 0 0 4px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--surface);
+  letter-spacing: -0.3px;
+}
+
+.app-header p {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Controls bar */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+  background: rgba(241, 242, 240, 0.06);
+  border: 1px solid rgba(225, 224, 221, 0.15);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1 1 180px;
+}
+
+.control-group label {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--muted);
+}
+
+/* Summary tiles */
+.summary-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 480px) {
+  .summary-tiles {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tile {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 20px 24px;
+}
+
+.tile-label {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.tile-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-on-surface);
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+@media (max-width: 640px) {
+  .tile-value {
+    font-size: 24px;
+  }
+}
+
+/* Charts */
+.chart-card {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.chart-card h2 {
+  margin: 0 0 16px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-muted);
+}
+
+.histograms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .histograms {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Empty / loading */
+.empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(55, 187, 228, 0.2);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Help tooltip */
+.help-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.help-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(225, 224, 221, 0.15);
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 700;
+  cursor: default;
+  line-height: 1;
+  user-select: none;
+}
+
+.help-icon:hover {
+  background: rgba(225, 224, 221, 0.25);
+}
+
+.help-bubble {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2a2924;
+  color: #f1f2f0;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.5;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(225, 224, 221, 0.2);
+  width: 220px;
+  white-space: normal;
+  z-index: 100;
+  pointer-events: none;
+}
+
+/* Heatmap */
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: 32px repeat(24, 1fr);
+  gap: 2px;
+}
+
+.heatmap-row-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 6px;
+  height: 18px;
+}
+
+.heatmap-hour-label {
+  font-size: 9px;
+  color: var(--text-muted);
+  text-align: center;
+  height: 16px;
+  line-height: 16px;
+}
+
+.heatmap-cell {
+  height: 18px;
+  border-radius: 2px;
+  cursor: default;
+  transition: opacity 0.1s;
+}
+
+.heatmap-cell:hover {
+  outline: 1px solid rgba(55, 187, 228, 0.8);
+}
+
+.heatmap-tooltip {
+  position: absolute;
+  transform: translateX(-50%) translateY(-100%);
+  background: #2a2924;
+  color: #f1f2f0;
+  font-size: 11px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 1px solid rgba(225, 224, 221, 0.2);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 50;
+}
+
+/* Placeholder prompt */
+.prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.prompt-icon {
+  font-size: 28px;
+  opacity: 0.4;
+}

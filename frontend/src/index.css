@@ -1,0 +1,30 @@
+:root {
+  --bg: #35342f;
+  --surface: #f1f2f0;
+  --accent: #37bbe4;
+  --muted: #e1e0dd;
+
+  --text-on-surface: #35342f;
+  --text-on-bg: #f1f2f0;
+  --text-muted: #6b6760;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  font: 14px/1.5 var(--sans);
+  color-scheme: dark;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-on-bg);
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}

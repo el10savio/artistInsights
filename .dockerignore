@@ -1,0 +1,16 @@
+# Large data files
+dataset/
+
+# Frontend (not part of the Go server)
+frontend/
+
+# Migrations (run via migrate tool, not embedded in the binary)
+migrations/
+
+# Development and tooling
+Makefile
+docker-compose.yml
+.claude/
+
+# OS
+.DS_Store
