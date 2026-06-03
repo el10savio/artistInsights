@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/ClickHouse/clickhouse-go/v2"
-	"github.com/el10savio96/artistInsights/src/lib"
+	"github.com/el10savio/artistInsights/src/lib"
 )
 
 type ArtistStore struct {

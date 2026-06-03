@@ -1,4 +1,4 @@
-module github.com/el10savio96/artistInsights
+module github.com/el10savio/artistInsights
 
 go 1.25.0
 

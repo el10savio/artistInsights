@@ -10,7 +10,7 @@ import (
 	"time"
 
 	goch "github.com/ClickHouse/clickhouse-go/v2"
-	"github.com/el10savio96/artistInsights/src/infra/clickhouse"
+	"github.com/el10savio/artistInsights/src/infra/clickhouse"
 )
 
 var store *clickhouse.ArtistStore
@@ -26,7 +26,7 @@ var (
 	seedEnd   = time.Date(2022, 12, 31, 23, 59, 59, 0, time.UTC)
 	seedRows  = []struct {
 		artistID, trackID, trackName, userID, artistName string
-		ts                                                time.Time
+		ts                                               time.Time
 	}{
 		{testArtistID, "track-1", "Song One", testUserA, "Test Artist", time.Date(2022, 3, 1, 12, 0, 0, 0, time.UTC)},
 		{testArtistID, "track-2", "Song Two", testUserA, "Test Artist", time.Date(2022, 6, 1, 12, 0, 0, 0, time.UTC)},

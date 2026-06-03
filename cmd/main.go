@@ -5,10 +5,10 @@ import (
 	"log"
 
 	"github.com/caarlos0/env/v11"
-	infra "github.com/el10savio96/artistInsights/src/infra/clickhouse"
-	"github.com/el10savio96/artistInsights/src/lib"
-	"github.com/el10savio96/artistInsights/src/pkg/logger"
-	"github.com/el10savio96/artistInsights/src/srv"
+	infra "github.com/el10savio/artistInsights/src/infra/clickhouse"
+	"github.com/el10savio/artistInsights/src/lib"
+	"github.com/el10savio/artistInsights/src/pkg/logger"
+	"github.com/el10savio/artistInsights/src/srv"
 )
 
 type config struct {

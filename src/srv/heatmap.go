@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/el10savio96/artistInsights/src/lib"
+	"github.com/el10savio/artistInsights/src/lib"
 	"go.uber.org/zap"
 )
 

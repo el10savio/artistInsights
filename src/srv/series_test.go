@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/el10savio96/artistInsights/src/lib"
-	"github.com/el10savio96/artistInsights/src/srv/mocks"
+	"github.com/el10savio/artistInsights/src/lib"
+	"github.com/el10savio/artistInsights/src/srv/mocks"
 	"go.uber.org/mock/gomock"
 	"go.uber.org/zap"
 
-	"github.com/el10savio96/artistInsights/src/srv"
+	"github.com/el10savio/artistInsights/src/srv"
 )
 
 func newSeriesTestServer(t *testing.T) (*srv.Server, *mocks.MockArtistService) {

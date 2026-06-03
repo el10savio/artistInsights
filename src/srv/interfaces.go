@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/el10savio96/artistInsights/src/lib"
+	"github.com/el10savio/artistInsights/src/lib"
 )
 
 // ArtistService is the lib contract that srv depends on.

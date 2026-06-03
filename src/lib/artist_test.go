@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/el10savio96/artistInsights/src/lib"
-	"github.com/el10savio96/artistInsights/src/lib/mocks"
+	"github.com/el10savio/artistInsights/src/lib"
+	"github.com/el10savio/artistInsights/src/lib/mocks"
 	"go.uber.org/mock/gomock"
 )
 

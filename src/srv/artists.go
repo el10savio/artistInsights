@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/el10savio96/artistInsights/src/lib"
+	"github.com/el10savio/artistInsights/src/lib"
 	"go.uber.org/zap"
 )
 
